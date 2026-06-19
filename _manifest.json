@@ -22,7 +22,9 @@
     "max_version": "2.99.99"
   },
   "dependencies": [],
-  "capabilities": [],
+  "capabilities": [
+    "hook.send_service.before_send"
+  ],
   "i18n": {
     "default_locale": "zh-CN"
   }

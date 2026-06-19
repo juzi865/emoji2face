@@ -52,6 +52,10 @@ plugin.py 第 2375 行附近
 
 修改后保存即可，无需重启 MaiBot——执行 `/pm plugin reload snowluma-adapter` 热重载适配器。
 
+> ⚠️ **关于 adapter 兼容性**  
+> 上述修改针对 SnowLuma adapter 当前版本的 `_convert_outbound_segments()` 实现。如果 SnowLuma adapter 后续更新，
+> 该补丁可能被覆盖或失效，需要重新检查并应用。建议在更新 SnowLuma adapter 后主动验证 emoji 转换是否正常工作。
+
 ## 安装
 
 将 `emoji2face/` 目录放入 `modules/MaiBot/plugins/` 后执行插件重载：
